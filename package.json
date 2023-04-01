@@ -1,5 +1,6 @@
 {
-  "name": "simple-light-react",
+  "name": "ConchaReisWebsite",
+  "homepage": "https://concha-reis.com/",
   "version": "0.1.0",
   "scripts": {
     "dev": "vite",
