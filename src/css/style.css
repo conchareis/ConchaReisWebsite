@@ -1,24 +1,74 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800;900&display=fallback');
-
-@import 'tailwindcss/base';
-@import 'tailwindcss/components';
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800;900&display=fallback");
+@import url("https://use.typekit.net/anw2wdi.css");
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@600&family=Inter:wght@100;200;300;400;500;600&family=Lily+Script+One&family=Pacifico&family=Suranna&family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+@import "tailwindcss/base";
+@import "tailwindcss/components";
 
 /* Additional styles */
-@import 'additional-styles/utility-patterns.css';
-@import 'additional-styles/range-slider.css';
-@import 'additional-styles/toggle-switch.css';
-@import 'additional-styles/theme.css';
+@import "additional-styles/utility-patterns.css";
+@import "additional-styles/range-slider.css";
+@import "additional-styles/toggle-switch.css";
+@import "additional-styles/theme.css";
 
-@import 'tailwindcss/utilities';
+@import "tailwindcss/utilities";
 
 /* Additional Tailwind directives: https://tailwindcss.com/docs/functions-and-directives/#responsive */
 @layer utilities {
-    .rtl {
-        direction: rtl;
-    }
+  .rtl {
+    direction: rtl;
+  }
 }
 
 /* See Alpine.js: https://github.com/alpinejs/alpine#x-cloak */
 [x-cloak=""] {
-    display: none;
+  display: none;
+}
+
+.bg-castanho {
+  background-color: #695d5d;
+}
+
+.bg-creme {
+  background-color: #cec2c2;
+}
+
+.logo_container {
+  display: flex;
+  justify-content: center;
+}
+
+.logo_container img {
+  max-width: 60%;
+}
+
+.logo_letters {
+  /* font-family: "Suranna", serif; */
+  font-family: "Lily Script One", cursive;
+  letter-spacing: 0.15rem;
+  font-size: 5rem;
+  /* text-transform: uppercase; */
+  text-align: center;
+  margin-right: 100px;
+  margin-left: 100px;
+  line-height: 83px;
+  margin-bottom: 68px;
+}
+
+.colors {
+  background: -webkit-linear-gradient(left, #eee, #a68f83);
+  background: -o-linear-gradient(right, #eee, #a68f83);
+  background: -moz-linear-gradient(right, #eee, #a68f83);
+  background: linear-gradient(to right, #eee, #a68f83);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.logo_tiny {
+  font-family: "adobe-caslon-pro", serif;
+  font-size: 3rem;
+  letter-spacing: 0.3rem;
+  color: #cec2c2;
+  font-style: normal;
+  text-transform: uppercase;
+  font-weight: bold;
 }
